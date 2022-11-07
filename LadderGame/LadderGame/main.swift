@@ -7,5 +7,6 @@
 
 import Foundation
 
-print("Hello, World!")
-
+let input = readLine() ?? ""
+let numberOfPlayers = Int(input.trimmingCharacters(in: .whitespacesAndNewlines)) ?? 0
+if numberOfPlayers < 2 || numberOfPlayers > 8 { exit(1) }
